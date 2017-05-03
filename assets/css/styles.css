@@ -1,0 +1,38 @@
+.sliderMainColumn {
+    position: absolute;
+    top: 0px;
+    backface-visibility: hidden;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    transform: translateZ(0px) rotateY(0rad) translateZ(0px);
+}
+
+.sliderSecondaryColumn {
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear;
+    transform: translateZ(0px) rotateY(3.14159rad) translateZ(0px);
+}
+
+.transformUp {
+    -ms-transform: translateZ(0px) rotateY(3.14159rad) translateZ(0px);
+    -webkit-transform: translateZ(0px) rotateY(3.14159rad) translateZ(0px);
+    transform: translateZ(0px) rotateY(3.14159rad) translateZ(0px);
+    z-index: 0;
+}
+
+.transformDown {
+    z-index: 1;
+    -ms-transform: translateZ(0px) rotateY(0) translateZ(0px);
+    -webkit-transform: translateZ(0px) rotateY(0) translateZ(0px);
+    transform: translateZ(0px) rotateY(0) translateZ(0px);
+
+}
